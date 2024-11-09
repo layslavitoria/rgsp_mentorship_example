@@ -1,9 +1,11 @@
 <h1>Mentoras do Rails Girls!</h1>
+<%= link_to "nova mentora", new_mentor_path %>
 <ul>
   <% @mentors.each do |mentor| %>
-    <li>
-      <%= mentor.name %>
+    <li>    
+      <%= link_to mentor.name, mentor %>
     </li>
+
   <% end %>
 </ul>
 
